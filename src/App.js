@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Bootstrap, Grid, Row, Col} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
 
 class App extends Component {
   // create landing page
@@ -16,23 +18,23 @@ class App extends Component {
         <p className="App-intro">
           testing
         </p>
-        <div class="container">
-          <div class="row">
-            <div class="col">
+        <div className="container">
+          <div className="row">
+            <div className="col">
               1 of 2
             </div>
-            <div class="col">
+            <div className="col">
               1 of 2
             </div>
           </div>
-          <div class="row">
-            <div class="col">
+          <div className="row">
+            <div className="col">
               1 of 3
             </div>
-            <div class="col">
+            <div className="col">
               1 of 3
             </div>
-            <div class="col">
+            <div className="col">
               1 of 3
             </div>
           </div>
