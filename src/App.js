@@ -9,6 +9,7 @@ class App extends Component {
   // create login page
   // create events page
   // add navigation
+  
   render() {
     return (
       <div className="App">
