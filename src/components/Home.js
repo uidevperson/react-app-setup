@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Jumbotron, Grid, Row, Col, Image, Button } from 'react-bootstrap';
-import { Grid, Navbar, Jumbotron, Button, Form } from 'react-bootstrap';
 import './Home.css';
 
 
