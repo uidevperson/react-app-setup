@@ -9,7 +9,17 @@ class Home extends Component {
    
   render() {
     return (
-      <div>Home</div>
+      <Grid>
+        <Jumbotron>
+          <h2>Home Page</h2>
+          <p>
+            App built with React, React-Router and React-Bootstrap.
+          </p>
+        </Jumbotron>
+        <Link to="/about">
+          <Button bsStyle='primary'>About</Button>
+        </Link>
+      </Grid>
     );
   }
 }
