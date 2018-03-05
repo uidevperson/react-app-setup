@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Grid, Navbar, Jumbotron, Button } from 'react-bootstrap';
+import { Grid, Navbar, Jumbotron, Button, Form } from 'react-bootstrap';
 
 class App extends Component {
   // create landing page
@@ -12,32 +12,29 @@ class App extends Component {
   
   render() {
     return (
-      <div>
-            <Navbar inverse fixedTop>
-              <Grid>
-                <Navbar.Header>
-                  <Navbar.Brand>
-                    <a href="/">React App</a>
-                  </Navbar.Brand>
-                  <Navbar.Toggle />
-                </Navbar.Header>
-              </Grid>
-            </Navbar>
-            <Jumbotron>
-              <Grid>
-                <h1>Welcome to React</h1>
-                <p>
-                  <Button
-                    bsStyle="success"
-                    bsSize="large"
-                    href="http://react-bootstrap.github.io/components.html"
-                    target="_blank">
-                    View React Bootstrap Docs
-                  </Button>
-                </p>
-              </Grid>
-            </Jumbotron>
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
           </div>
+        </nav>
     );
   }
 }
